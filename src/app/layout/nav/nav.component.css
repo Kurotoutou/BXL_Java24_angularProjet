@@ -1,0 +1,19 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: #222E50;
+  height: 100%;
+  padding: 1rem 0.5rem;
+  width: 10rem;
+}
+
+UL {
+  list-style: none;
+}
+
+ul li {
+  color: #41D3BD;
+  margin: 2rem;
+  border: 10px #FFFFF2;
+}
