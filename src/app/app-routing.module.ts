@@ -7,7 +7,8 @@ const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
   {path: 'about', component: AboutComponent},
-  {path: 'exo', loadChildren: () => import('./exos/exos.module').then(m => m.ExosModule)}
+  {path: 'exo', loadChildren: () => import('./exos/exos.module').then(m => m.ExosModule)},
+  {path: 'demo', loadChildren: () => import('./demos/demos.module').then(m => m.DemosModule)},
 ];
 
 @NgModule({
