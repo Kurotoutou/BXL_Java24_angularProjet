@@ -10,10 +10,16 @@
 
 UL {
   list-style: none;
-}
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 
-ul li {
-  color: #41D3BD;
-  margin: 2rem;
-  border: 10px #FFFFF2;
+  li {
+    margin: 2rem;
+    border: 10px #FFFFF2;
+  }
+
+  a {
+    color: #41D3BD;
+  }
 }
