@@ -38,5 +38,7 @@
   @for (trainer of trainers; track trainer.id) {
     <h5>{{trainer.firstName}} {{trainer.lastName}}</h5>
     <img [src]="'assets/images/' + trainer.pictureUrl" [alt]="'Photo de ' + trainer.firstName">
+  } @empty {
+    <p>La liste est vide</p>
   }
 </section>
