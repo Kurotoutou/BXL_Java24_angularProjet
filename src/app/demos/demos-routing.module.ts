@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {BindingsComponent} from './bindings/bindings.component';
+import {BindingsComponent} from './demo-bindings/bindings.component';
 import {DemosComponent} from './demos.component';
+import {DemoPipesComponent} from './demo-pipes/demo-pipes.component';
+import {DemoDirectivesComponent} from './demo-directives/demo-directives.component';
 
 const routes: Routes = [
-  {path:'', component: DemosComponent, children: [
-      {path: 'bindings01', component: BindingsComponent}
-    ]}
+  {path: 'bindings01', component: BindingsComponent},
+  {path: 'demoPipe', component: DemoPipesComponent},
+  {path: 'demoDirective', component: DemoDirectivesComponent},
 ];
 
 @NgModule({

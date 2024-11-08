@@ -1,0 +1,34 @@
+.chrono {
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 2px solid black;
+  width: fit-content;
+}
+
+button {
+  color: black;
+  background-color: #F6D0B1;
+  margin: 0.5rem;
+
+  &:disabled {
+    background-color: grey;
+    color: black;
+  }
+}
+
+
+
+

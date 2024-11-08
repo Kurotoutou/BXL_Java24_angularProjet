@@ -1,0 +1,10 @@
+<section class="chrono">
+  <h3>Chronomètre</h3>
+
+  <p>{{seconds | toTimerPipe}}</p>
+  <div id="btnChrono">
+    <button (click)="startChronometre()" [disabled]="IntervalId">Start</button>
+    <button (click)="pauseChronometre()" [disabled]="!IntervalId">Pause</button>
+    <button (click)="stopChronometre()" [disabled]="seconds <= 0 && !IntervalId">Stop</button>
+  </div>
+</section>

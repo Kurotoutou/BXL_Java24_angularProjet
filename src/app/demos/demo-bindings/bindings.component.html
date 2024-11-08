@@ -1,0 +1,26 @@
+<h2>Demo bindings</h2>
+<section>
+  <h3>Property binding</h3>
+  <p>Permet de fair le lien entre une propriété ts vers notre html</p>
+  <h4>One way</h4>
+  <p>Le formateur du jour est {{formateur}}</p>
+  <h4>Two ways</h4>
+  <input type="text" [(ngModel)]="formateur">
+</section>
+
+<section>
+  <h3>Attribute binding</h3>
+  <div>
+    <p>Permet de bind un attribut html avec du ts</p>
+    <input type="text" [placeholder]="placeholderText">
+  </div>
+</section>
+
+<section>
+  <h3>Event binding</h3>
+  <div>
+    <p>Permet de relier un event à une methode</p>
+    <p>{{result ?? 'En attente de la génération aléatoire'}}</p>
+    <button (click)="getResult()">Play</button>
+  </div>
+</section>

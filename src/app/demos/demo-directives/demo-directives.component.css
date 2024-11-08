@@ -1,0 +1,27 @@
+.christmas {
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.big {
+  font-size: 8rem;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.buttons {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ifIf {
+  font-size: 2rem;
+}
